@@ -8,63 +8,86 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1 class="logo">My Website</h1>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <!-- Contact link now points to #contact -->
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <h2>Welcome to Box Model Demo</h2>
-    <p>Experimenting with margins, padding, borders, and spacing in CSS.</p>
-    <button class="btn">Learn More</button>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <h1 class="logo">My Website</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Cards Section -->
-  <section class="cards-container">
-    <div class="card">
-      <h3>Card One</h3>
-      <p>This card demonstrates margin, padding, and border with background color.</p>
-      <button class="btn">Read More</button>
-    </div>
-    <div class="card">
-      <h3>Card Two</h3>
-      <p>Notice the spacing between cards due to margins and the inner spacing due to padding.</p>
-      <button class="btn">Read More</button>
-    </div>
-    <div class="card">
-      <h3>Card Three</h3>
-      <p>Borders outline each card, while background colors help visualize box boundaries.</p>
-      <button class="btn">Read More</button>
-    </div>
-  </section>
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>We’d love to hear from you! Fill out the form below:</p>
+    <!-- Hero / Intro Section -->
+    <section class="hero" id="home">
+      <h2>Welcome to Box Model Demo</h2>
+      <p>Experimenting with margins, padding, borders, and spacing in CSS.</p>
+      <button class="btn">Learn More</button>
+    </section>
 
-    <form class="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name">
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        This simple project demonstrates the use of the CSS box model. 
+        We experiment with margin, padding, and border to understand how 
+        they affect layout and spacing. 
+      </p>
+      <p>
+        The page includes structured sections such as navigation, hero, about, 
+        services, and contact, styled with only HTML and CSS.
+      </p>
+    </section>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email">
+    <!-- Services / Cards Section -->
+    <section id="services" class="cards-container">
+      <h2>Our Services</h2>
+      <div class="card">
+        <h3>Card One</h3>
+        <p>This card demonstrates margin, padding, and border with background color.</p>
+        <button class="btn">Read More</button>
+      </div>
+      <div class="card">
+        <h3>Card Two</h3>
+        <p>Notice the spacing between cards due to margins and the inner spacing due to padding.</p>
+        <button class="btn">Read More</button>
+      </div>
+      <div class="card">
+        <h3>Card Three</h3>
+        <p>Borders outline each card, while background colors help visualize box boundaries.</p>
+        <button class="btn">Read More</button>
+      </div>
+    </section>
 
-      <label for="message">Message</label>
-      <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Fill out the form below:</p>
 
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
 
-  <!-- Footer -->
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <p>&copy; 2025 My Website. All rights reserved.</p>
   </footer>
